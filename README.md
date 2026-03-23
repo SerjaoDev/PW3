@@ -1,6 +1,3 @@
-# PW3
-Atividades de Programação Web 3
-
 # COMENTÁRIOS PARA ESTUDO
 # Dentro do vite.config.js
 - Instale o vite-plugin-pages para gerar rotas automáticas com base na estrutura de arquivos. Os arquivos por padrão ficam no diretório 'src/pages'. Mas você pode configurar o diretório de páginas com o opção 'pagesDir' do plugin.
