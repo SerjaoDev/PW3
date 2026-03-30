@@ -31,9 +31,6 @@
 - Limpa o campo de texto após adicionar o item
 - Código: *setTexto("")*
 
-- Mapeia cada item da lista de dados para um elemento <li> que será exibido na página
-- Código: *listaDeDados.map((item, index) -> (<li key={index}>{item}</li>))*
-
 # BIBLIOTECAS PARA INSTALAR
 - npm install vite-plugin-pages
 - npm install react-router-dom
