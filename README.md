@@ -22,8 +22,7 @@
 - Previne o comportamento padrão do formulário, que é recarregar a página
 - Código: *e.preventDefault()*
 
-- Cria um novo array de dados, adicionando o texto atual ao final da lista de dados existente
-- Os três pontos se chama Operador de Espalhamento
+- Cria um novo array de dados, adicionando o texto atual ao final da lista de dados existente. Os três pontos se chama Operador de Espalhamento
 - Código: *const novaListaDeDados = [...ListaDeDados, texto]*
 
 - Atualiza o estado da lista de dados com a nova lista, o que fará com que a página seja re-renderizada e exiba o novo item
@@ -34,6 +33,25 @@
 
 - Mapeia cada item da lista de dados para um elemento que será exibido na página
 - Código: *listaDeDados.map((item,index)=>(<tr key={index}><td>{index}</td><td>{item}</td></tr>))*
+
+# Dentro de db.js
+- Essa STORAGE_KEY é uma string que identifica o local onde os dados serão armazenados. Cada STORAGE_KEY deve representar uma única entidade ou coleção de dados. Ou seja, se precisa armazenar mais de uma, é ideal criar mais de uma STORAGE_KEY. Isso ajuda a organizar os dados e evita confusões ao acessar ou modificar os itens armazenados
+- Código: *const STORAGE_KEY = 'pwiii-itens';*
+
+- localStorage é uma variável predefinida que aponta para o armazenamento local do navegador, tal variável contém um objeto cujo metódo "getItems" retorna o conteúdo armazenado no banco de dados local
+- Código: *const infoBruta = localStorage.getItems(STORAGE_KEY);*
+
+- Grava os valores dentro do local especificado pela STORAGE_KEY
+- Código: *localStorage.setItem(STORAGE_KEY, JSON.stringify(items));*
+
+- Recupera os items atuais
+- Código: *const items = getItems();*
+
+- Adiciona o novo item no início da lista
+- Código: *items.unshift(item);*
+
+- Salva a lista atualizada
+- Código: *saveItems(items);*
 
 # BIBLIOTECAS PARA INSTALAR
 - npm install vite-plugin-pages
