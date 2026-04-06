@@ -23,13 +23,17 @@
 - Código: *e.preventDefault()*
 
 - Cria um novo array de dados, adicionando o texto atual ao final da lista de dados existente
-- Código: *const novaListaDeDados = [...ListaDeDados, e.target.value]*
+- Os três pontos se chama Operador de Espalhamento
+- Código: *const novaListaDeDados = [...ListaDeDados, texto]*
 
 - Atualiza o estado da lista de dados com a nova lista, o que fará com que a página seja re-renderizada e exiba o novo item
 - Código: *setListaDeDados(novaListaDeDados)*
 
 - Limpa o campo de texto após adicionar o item
 - Código: *setTexto("")*
+
+- Mapeia cada item da lista de dados para um elemento que será exibido na página
+- Código: *listaDeDados.map((item,index)=>(<tr key={index}><td>{index}</td><td>{item}</td></tr>))*
 
 # BIBLIOTECAS PARA INSTALAR
 - npm install vite-plugin-pages
