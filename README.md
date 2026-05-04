@@ -1,5 +1,5 @@
 # COMENTÁRIOS PARA ESTUDO
-# COMEÇO DA AULA
+**COMEÇO DA AULA**
 - Atualizar o node.js
 - Digite npm install no terminal do VS Code
 - Digite npm install vite no terminal do VS Code
