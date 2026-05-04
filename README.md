@@ -9,12 +9,12 @@
 - Por último, digite npm run dev para rodar o projeto
 
 -----------------------------------------------------------------------------------------------------------------------------
-# Dentro do vite.config.js
+**Dentro do vite.config.js**
 - Instale o vite-plugin-pages para gerar rotas automáticas com base na estrutura de arquivos. Os arquivos por padrão ficam no diretório 'src/pages'. Mas você pode configurar o diretório de páginas com a opção 'pagesDir' do plugin.
 - **Código**: *import Pages from 'vite-plugin-pages'* 
 
 -----------------------------------------------------------------------------------------------------------------------------
-# Dentro do main.jsx
+**Dentro do main.jsx**
 - Devido a uma atualização recente, o caminho de importação das rotas geradas pelo 'vite-plugin-pages' mudou de '~pages' para '~react-pages'
 - **Código**: *import routes from '~react-pages';*
 
@@ -24,7 +24,7 @@
 - O StrictMode é uma ferramenta para destacar problemas potenciais no aplicativo. Ele ativa verificações e avisos adicionais para as tags filhas, como a renderização dupla. Isso pode ajudar a identificar problemas de desempenho, efeitos colaterais inesperados e outros problemas comuns durante o desenvolvimento. Ele não afeta o comportamento do aplicativo em produção
 
 -----------------------------------------------------------------------------------------------------------------------------
-#  Dentro do data.jsx
+**Dentro do data.jsx**
 - Esse estado é para armazenar a lista de dados que será exibida na página, perceba a inicialização como um array vazio
 - **Código**: *const [listaDeDados, setListaDeDados] = useState([])*
 
@@ -44,7 +44,7 @@
 - **Código**: *setTexto("")*
 
 -----------------------------------------------------------------------------------------------------------------------------
-# Dentro de db.js
+**Dentro de db.js**
 - Essa STORAGE_KEY é uma string que identifica o local onde os dados serão armazenados. Cada STORAGE_KEY deve representar uma única entidade ou coleção de dados. Ou seja, se precisa armazenar mais de uma, é ideal criar mais de uma STORAGE_KEY. Isso ajuda a organizar os dados e evita confusões ao acessar ou modificar os itens armazenados
 - **Código**: *const STORAGE_KEY = 'pwiii-items';*
 
