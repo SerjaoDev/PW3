@@ -37,7 +37,7 @@
 - Atualiza o estado da lista de dados com a nova lista, o que fará com que a página seja re-renderizada e exiba o novo item
 - **Código**: *setListaDeDados(loadItems())*
 
-- Aadiciona um novo item à lista usando a função addItem importada do arquivo db.js
+- Adiciona um novo item à lista usando a função addItem importada do arquivo db.js
 - **Código**: *addItem(texto)*
 
 - Limpa o campo de texto após adicionar o item
