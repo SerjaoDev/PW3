@@ -43,6 +43,11 @@
 - Limpa o campo de texto após adicionar o item
 - **Código**: *setTexto("")*
 
+- Ess estado é usado para informar que o app/site está no modo edição
+- **Código**: *const [editando, setEditando] = useState(false)*
+
+- Esse estado guarda o id do objeto que está sendo editado
+- **Código**: *const [idEditado, setIdEditado] = useState(0);*
 -----------------------------------------------------------------------------------------------------------------------------
 **Dentro de db.js**
 - Essa STORAGE_KEY é uma string que identifica o local onde os dados serão armazenados. Cada STORAGE_KEY deve representar uma única entidade ou coleção de dados. Ou seja, se precisa armazenar mais de uma, é ideal criar mais de uma STORAGE_KEY. Isso ajuda a organizar os dados e evita confusões ao acessar ou modificar os itens armazenados
@@ -68,3 +73,10 @@
 
 - Salva a lista atualizada
 - **Código**: *saveItems(updateItems);*
+
+- Carrega todos os itens cadastrados e aplica sobre os mesmo uma função que atualiza apenas os objetos com o id igual ao fornecido
+- i é a variável que guarda cada um dos elementos da lista, por exemplo: Se loadItems() retornar [1,5,20], então i assumirá cada um desses valores
+- **Código**: *const items = loadItems().map( i => { if(i.id === id){ return {...i, ...update}} return i;});*
+
+- Persiste a lista com o item atualizado
+- **Código**: *saveItems(items);*
